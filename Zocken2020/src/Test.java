@@ -12,5 +12,6 @@ public class Test {
 		v1.y = 2 * v1.y;
 
 		System.out.println(v1.toString());
+		
 	}
 }
