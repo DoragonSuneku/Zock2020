@@ -12,6 +12,8 @@ public class Test {
 		v1.y = 2 * v1.y;
 
 		System.out.println(v1.toString());
+		String s1= "hallo";
+		String s2="Hallo". toLowerCase ();
+		System.out.println(s1.equals(s2));
 		
-	}
-}
+}}
