@@ -3,25 +3,30 @@ public class Vertex {
 
 	public double x;
 	public double y;
-	
+
 	public Vertex(double x, double y) {
-		
-		this.x=x;
-		this.y=y;
+
+		this.x = x;
+		this.y = y;
 	}
-	
-	
+
 	public double length() {
-		return Math.sqrt(x*x+y*y);
+		return Math.sqrt(x * x + y * y);
 	}
-	
+
 	public Vertex skalarMult(double s) {
-		return new Vertex(x*s, y*s);
+		return new Vertex(x * s, y * s);
 	}
-	
+
+	public void skalarMultMod(double s) {
+		x = s * x;
+		y = s * y;
+	}
+
+	public Vertex add(Vertex v2) {return new Vertex(x+v2.x,y+v2.y);}
 	
 	public String toString() {
-		return "("+x+","+y+")";
+		return "(" + x + "," + y + ")";
 	}
-	
+
 }
