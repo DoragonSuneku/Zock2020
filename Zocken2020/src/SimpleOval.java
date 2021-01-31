@@ -2,15 +2,15 @@
 public class SimpleOval extends GeometricObject {
 
 	public SimpleOval(double w, double h, Vertex pos) {
-		super(w, h, pos);
+		super(w, h, pos, null);
 	}
 
 	public SimpleOval(double w, double h, double x, double y) {
-		super(w, h, new Vertex(x, y));
+		super(w, h, new Vertex(x, y), null);
 	}
 
 	public SimpleOval(double w, double h) {
-		super(w, h, new Vertex(0, 0));
+		super(w, h, new Vertex(0, 0), null);
 
 	}
 
